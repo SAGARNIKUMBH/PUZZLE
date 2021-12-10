@@ -31,4 +31,22 @@ console.log("Puzzle Solution");
 // console.log(two_no(20, 20));
 // console.log(two_no(20, 30));
 
-// Q.4.
+// Q.4.Write a JavaScript program to divide two positive numbers and return a string with properly formatted commas.??
+// Ans.
+function division_string(n1, n2) {
+  
+    n1 = 80;
+    n2 = 6;
+    
+    var div = Math.round(n1 / n2).toString(),
+    result_array = div.split("");
+    
+    if (div >= 1000)
+    {
+    for (var i = div.length - 3; i > 0; i -= 3) 
+    {
+    result_array.splice(i, 0, ",");
+    }
+    result_array;
+    }
+    
