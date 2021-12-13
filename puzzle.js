@@ -49,4 +49,4 @@ function division_string(n1, n2) {
     }
     result_array;
     }
-    
+    console.log( result_array );
